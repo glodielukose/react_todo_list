@@ -1,8 +1,8 @@
 import React from 'react'
 
 import {
-        FaRecycle
-} from 'react-icons/fa'
+        MdDelete
+} from 'react-icons/md'
 
 function Todo({name, completed, id, deleteTask, toogleTaskCompleted}) {
   
@@ -32,10 +32,10 @@ function Todo({name, completed, id, deleteTask, toogleTaskCompleted}) {
       </div>
 
       <div className="btn-group">
-        <FaRecycle 
+        <MdDelete 
           onClick={handleClick}
           className="btn-option"
-        ></FaRecycle>
+        ></MdDelete>
       </div>
     </li>
   )
